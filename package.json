@@ -1,0 +1,11 @@
+{
+  "name": "js-testing-practice",
+  "version": "1.0.0",
+  "description": "JavaScript testing practice using Jest",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Mark Edward Ratio",
+  "license": "ISC"
+}
