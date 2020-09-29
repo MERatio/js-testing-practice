@@ -1,4 +1,4 @@
-const { capitalize } = require('./functions');
+const { capitalize, reverseString } = require('./functions');
 
 // capitalize test
 
@@ -46,4 +46,31 @@ test('capitalize multiple words with punctuation at the beggining of a word', ()
 test('accepts nonletter', () => {
 	const str = capitalize('the clothing costs $30.');
 	expect(str).toBe('The Clothing Costs $30.');
+});
+
+// reverseString tests
+
+test('reversing empty string returns the same thing', () => {
+	const str = reverseString('');
+	expect(str).toBe('');
+});
+
+test('reversing whitespaces returns the same thing', () => {
+	const str = reverseString('   ');
+	expect(str).toBe('   ');
+});
+
+test('reversing a char returns the same thing', () => {
+	const str = reverseString('a');
+	expect(str).toBe('a');
+});
+
+test('reverse a word', () => {
+	const str = reverseString('Hello');
+	expect(str).toBe('olleH');
+});
+
+test('reverse multiple words', () => {
+	const str = reverseString('Hello World');
+	expect(str).toBe('dlroW olleH');
 });
