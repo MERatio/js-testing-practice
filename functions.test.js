@@ -2,6 +2,16 @@ const { capitalize, reverseString } = require('./functions');
 
 // capitalize test
 
+test('capitalizing an empty string returns the same thing', () => {
+	const str = capitalize('');
+	expect(str).toBe('');
+});
+
+test('capitalizing white spaces returns the same thing', () => {
+	const str = capitalize('   ');
+	expect(str).toBe('   ');
+});
+
 test('capitalize a letter', () => {
 	const str = capitalize('a');
 	expect(str).toBe('A');
