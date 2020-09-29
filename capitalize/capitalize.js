@@ -18,9 +18,4 @@ const capitalize = (str) => {
 		.join(' ');
 };
 
-const reverseString = (str) => str.split('').reverse().join('');
-
-module.exports = {
-	capitalize,
-	reverseString,
-};
+module.exports = capitalize;
